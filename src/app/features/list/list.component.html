@@ -1,1 +1,16 @@
-<p>list works!</p>
+<h1>Lista of products</h1>
+
+<ul>
+  @for (product of products; track product.id) {
+    <li class="boxItem">
+      <ul>
+        <li class="boxAttribute">
+          {{ product.title }}
+        </li>
+        <li class="boxAttribute">
+          {{ product.price }}
+        </li>
+      </ul>
+    </li>
+  }
+</ul>
